@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-link {
+    @apply px-1 text-green-700 hover:text-green-600;
+  }
+
+  .btn {
+    @apply btn-link border border-gray-200 bg-slate-100 dark:border-stone-700 dark:bg-stone-900;
+  }
+}

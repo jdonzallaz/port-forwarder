@@ -1,0 +1,64 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "port-forwarder",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": true,
+        "open": true,
+        "scope": [
+          {
+            "name": "kubectl",
+            "cmd": "kubectl",
+            "args": true
+          }
+        ]
+      },
+      "fs": {
+        "all": true,
+        "scope": [
+          "**"
+        ]
+      },
+      "path": {
+        "all": true
+      },
+      "window": {
+        "close": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Port-forwarder",
+        "width": 800,
+        "height": 600,
+        "minWidth": 570,
+        "minHeight": 350
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "ch.jdonzallaz.port-forwarder",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    }
+  }
+}

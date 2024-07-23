@@ -93,8 +93,8 @@ function refreshCurrentNamespace() {
     <!-- Local port -->
     <Input
       type="number"
-      min="1000"
-      max="99999"
+      min="1"
+      max="65535"
       step="1"
       :placeholder="remotePort || 'Local port'"
       v-model="localPort" />
@@ -102,8 +102,8 @@ function refreshCurrentNamespace() {
     <!-- Remote port -->
     <Input
       type="number"
-      min="1000"
-      max="99999"
+      min="1"
+      max="65535"
       step="1"
       placeholder="Remote port*"
       v-model="remotePort"

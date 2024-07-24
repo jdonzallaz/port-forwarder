@@ -3,7 +3,7 @@
 Port-forwarder is a simple GUI app designed to replace the `kubectl port-forward` command. It provides a user-friendly
 interface to manage your port-forward connections efficiently, and automatically reconnects when the connection is lost.
 
-![](docs\images\port-forwarder-window.png "Port-forwarder window")
+![](docs/images/port-forwarder-window.png "Port-forwarder window")
 
 Built using [Tauri](https://tauri.app/).
 
